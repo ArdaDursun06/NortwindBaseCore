@@ -4,6 +4,7 @@ using Core.DepencyResolvers;
 using Core.Extendions;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
+using Core.Utilities.Security.Jwt;
 using DataAccess.Abstract;
 using DataAccess.Concreate.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
