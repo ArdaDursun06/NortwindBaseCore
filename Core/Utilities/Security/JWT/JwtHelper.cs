@@ -10,7 +10,7 @@ using Core.Extendions;
 using System.Linq;
 using Core.Utilities.Security.Jwt;
 using Microsoft.Extensions.Configuration;
-
+    
 
 namespace Core.Utilities.Security.JWT
 {
