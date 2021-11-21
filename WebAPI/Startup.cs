@@ -39,7 +39,7 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //IOC arka planda newleme iþi yapýyor
+            //IOC arka planda newleme iï¿½i yapï¿½yor
             //services.AddSingleton<IProductServices,ProductManager>();
             //services.AddSingleton<IProductDal,IEfProcuctDal>();
             services.AddCors();
@@ -75,7 +75,11 @@ namespace WebAPI
 
             app.ConfigureCustomExceptionMiddleware();
 
-            app.UseCors(builder=>builder.WithOrigins("http://localhost:3000").AllowAnyHeader());
+            app.UseCors(builder => builder
+     .AllowAnyOrigin()
+     .AllowAnyMethod()
+     .AllowAnyHeader()
+     );
 
             app.UseHttpsRedirection();
 
